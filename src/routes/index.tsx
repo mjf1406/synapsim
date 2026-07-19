@@ -1,17 +1,25 @@
 import { createFileRoute } from "@tanstack/react-router";
 
+import { FAQSection } from "./-home-components/faq";
+import { FeaturesSection } from "./-home-components/features";
+import { FooterSection } from "./-home-components/footer";
+import { HeroSection } from "./-home-components/hero";
+import { PagesSection } from "./-home-components/pages";
+import { TeachersSection } from "./-home-components/teachers";
+
 export const Route = createFileRoute("/")({
   component: IndexPage,
 });
 
 function IndexPage() {
   return (
-    <main className="mx-auto flex max-w-2xl flex-col gap-2 px-4 py-16">
-      <h1 className="text-3xl font-semibold tracking-tight">synapsim</h1>
-      <p className="text-muted-foreground">
-        TanStack Router is ready. Use the theme toggle in the header to switch light, dark, or
-        system.
-      </p>
-    </main>
+    <div className="mx-auto flex w-full flex-col items-center justify-center gap-4">
+      <HeroSection />
+      <PagesSection />
+      <TeachersSection />
+      <FeaturesSection />
+      <FAQSection />
+      <FooterSection />
+    </div>
   );
 }
