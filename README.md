@@ -1,0 +1,1 @@
+- [Shadcn Preset](https://ui.shadcn.com/create?preset=buHgbdw&template=vite&pointer=true)
