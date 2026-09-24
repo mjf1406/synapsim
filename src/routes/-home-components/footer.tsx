@@ -55,6 +55,30 @@ export function FooterSection({ className }: { className?: string }) {
                 <span className="sr-only">(opens in new tab)</span>
               </a>
             </div>
+
+            <div className="flex flex-col gap-2">
+              <h3 className="text-lg font-bold">Support</h3>
+              <a
+                href="https://ko-fi.com/michaelfitzgerald1406"
+                className="inline-flex items-center gap-1 font-medium text-muted-foreground hover:text-primary/90"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ko-fi
+                <ExternalLink aria-hidden className="size-3.5 shrink-0" />
+                <span className="sr-only">(opens in new tab)</span>
+              </a>
+              <a
+                href="https://www.patreon.com/cw/MichaelFitzgerald"
+                className="inline-flex items-center gap-1 font-medium text-muted-foreground hover:text-primary/90"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Patreon
+                <ExternalLink aria-hidden className="size-3.5 shrink-0" />
+                <span className="sr-only">(opens in new tab)</span>
+              </a>
+            </div>
           </div>
         </div>
 
